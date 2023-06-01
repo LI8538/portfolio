@@ -115,8 +115,6 @@ i{
     text-align: center;
 }
 
-
-
 .service {
     background-color: rgb(238, 246, 240);
     margin: 20px;
@@ -297,7 +295,7 @@ p{
 
 /* mes projets */
 .projets-section{
-margin-top: 50px;
+margin-top: 30px;
 }
 
 .projets{
@@ -305,7 +303,7 @@ margin-top: 50px;
 }
 
 .card{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     background-color: #f2f5f7;
     border: grey 1px solid;
 }
@@ -351,7 +349,7 @@ footer p{
     }
 
     .card{
-        margin-left: 30px;
+        margin-left: 50px;
     }
 
 
