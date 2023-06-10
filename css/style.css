@@ -116,7 +116,7 @@ i{
 }
 
 .service {
-    background-color: rgb(238, 246, 240);
+    background-color: rgb(227, 246, 233);
     margin: 20px;
     margin-top: 30px;
     /* margin-top:  38px;  */
@@ -230,43 +230,48 @@ h2{
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.bar-progress{
-position: relative;
-width: 80%;
-display: block;
-    margin-left: auto;
-    margin-right: auto
-   text-align:center;
-}
 
 
-p{
-    text-align:center;
+.competences > section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
   }
-  
+
+  .compSec > img{
+    width: 80px;
+    margin-right: 30px;
+  }
+
+  .progress-value > p{
+    text-align:center;
+    margin: -30px;
+  }
+
   .progress {
-    background: rgb(238, 238, 234);
+    background: rgb(237, 238, 234);
     justify-content: flex-start;
     border-radius: 100px;
     align-items: center;
     position: relative;
     padding: 0 5px;
     display: flex;
-    height: 40px;
-    width: 80%;
+    height: 15px;
+    width: 50%;
     margin-top: 20px;
   }
 
   .progress-value{
     box-shadow: 0 10px 40px -10px #f5eded;
     border-radius: 100px;
-    height: 30px;
+    height: 10px;
     width: 0;
   }
   
   .progress-value-html {
     animation: html 3s normal forwards;
-    background: #f76c3e;
+    background:  #69ee5f;
     -webkit-animation: html 5s normal forwards;
 }
   
@@ -277,7 +282,7 @@ p{
 
   .progress-value-css {
     animation: css 3s normal forwards;
-    background: #535fea;
+    background: #69ee5f;
     -webkit-animation: css 5s normal forwards;
 }
 
@@ -287,7 +292,7 @@ p{
   }
   .progress-value-js {
     animation: js 3s normal forwards;
-    background: #ebe41c;
+    background: #69ee5f;
     -webkit-animation: js 5s normal forwards;
 }
 
@@ -295,6 +300,26 @@ p{
     0% { width: 0; }
     100% { width: 50%; }
   }
+
+  .competences h3{
+    text-align: center;
+    margin: auto;
+   background-color: rgb(233, 242, 103);
+   width: 50%;
+
+  }
+
+  .apprentissageLogo{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .apprentissageLogo>img{
+    width: 80px;
+    margin: 10px;
+   
+  }
+
 
 /* mes projets */
 .projets-section{
@@ -307,8 +332,12 @@ margin-top: 30px;
 
 .card{
     margin-bottom: 30px;
-    background-color: #f2f5f7;
+    background-color: #eff7e3;
     border: grey 1px solid;
+}
+
+.card p{
+    text-align: center;
 }
 
 /* footer */
@@ -320,6 +349,7 @@ footer{
 
 footer p{
     color: white;
+    text-align: center;
 }
 
 /*------------------------
