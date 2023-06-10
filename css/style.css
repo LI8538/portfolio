@@ -75,7 +75,7 @@ main {
 }
 
 /* service */
-i{
+.service i{
 	/*background-color: #266809;
 	height: 80px;
 	animation-name: float;
@@ -338,6 +338,14 @@ margin-top: 30px;
 
 .card p{
     text-align: center;
+}
+
+/* icone de contact */
+.iconeContact{
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;    
 }
 
 /* footer */
