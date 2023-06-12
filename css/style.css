@@ -97,7 +97,7 @@ h1 {
 }
 
 /* service */
-.service i{
+.service i,.profil img{
 	/*background-color: #266809;
 	height: 80px;
 	animation-name: float;
