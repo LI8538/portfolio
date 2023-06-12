@@ -50,6 +50,26 @@ h1 {
     background-color: rgb(10, 6, 72);
 }
 
+/* h2 {
+    position: relative;
+    display: inline-block;
+  }*/
+  
+  h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38%;
+    height: 5px;
+    background-color: #f8b3cd;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+} 
+
 
 .contenaire-profil {
     display: flex;
@@ -97,6 +117,7 @@ h1 {
 }
 
 /* service */
+
 .service i,.profil img{
 	/*background-color: #266809;
 	height: 80px;
@@ -247,11 +268,16 @@ margin: 10px;
     margin-bottom: 50px;
 }
 
-h2{
+ h2{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
+
+  
+      
 }
+
+
 
 
 .competences > section{
