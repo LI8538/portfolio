@@ -19,7 +19,7 @@
         src="https://res.cloudinary.com/practicaldev/image/fetch/s--R9qwOwpC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/78hs31fax49uwy6kbxyw.png"
         alt="logo"
       />
-      <nav>
+      <!-- <nav>
         <ul>
           <li><a href="#services"> Service</a></li>
           <li><a href="#Parcours"> Parcour</a></li>
@@ -27,22 +27,21 @@
           <li><a href="#projets"> Projets</a></li>
           <li><a href="#contact"> Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
 
       <!-- nav ajout -->
-      <!-- <nav class="navbar dark-mode" role="navigation">
-        <div class="navbar__logo">Logo</div>    
+      <nav class="navbar dark-mode" role="navigation">
+        <!-- <div class="navbar__logo">Logo</div>     -->
         <ul class="navbar__links">
-          <li class="navbar__link first"><a href="#">Accueil</a></li>
-          <li class="navbar__link second"><a href="#section2">Services</a></li>
-          <li class="navbar__link third"><a href="#section3">Missions</a></li>
-          <li class="navbar__link four"><a href="#">Portfolio</a></li>
-          <li class="navbar__link fifth"><a href="#">Contact</a></li>
+          <li class="navbar__link first"><a href="#services">Services</a></li>
+          <li class="navbar__link second"><a href="#Compétences">Compétences</a></li>
+          <li class="navbar__link third"><a href="#projets">Projets</a></li>
+          <li class="navbar__link fifth"><a href="#contact">Contact</a></li>
         </ul>   
         <button class="burger">
           <span class="bar"></span>  
         </button>   
-      </nav> -->
+      </nav>
     </header>
     <!------------ main ---------->
     <main>
@@ -318,5 +317,29 @@
       <p>© Tous droits réservés</p>
       <p>WANG LI</p>
     </footer>
+
+
+
+
+    <script>
+   function toggleMenu () {  
+  const navbar = document.querySelector('.navbar');
+  const burger = document.querySelector('.burger');
+  
+  burger.addEventListener('click', (e) => {    
+    navbar.classList.toggle('show-nav');
+  });    
+  // bonus
+  const navbarLinks = document.querySelectorAll('.navbar a');
+  navbarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {    
+      navbar.classList.toggle('show-nav');
+    }); 
+  })
+   
+}
+toggleMenu();
+
+    </script>
   </body>
 </html>
