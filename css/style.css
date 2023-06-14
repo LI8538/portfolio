@@ -51,12 +51,12 @@ a {
   --font-size:1rem;
 }
 .light-mode {
-  --navbar-color: #222;
+  --navbar-color: #222222;
   --navbar-bg-color: #F0F0F0;  
 }
 .dark-mode {
   --navbar-color: #FFF;
-  --navbar-bg-color: #000;  
+  --navbar-bg-color: #030303;  
 }
 
 /* Reset */
@@ -390,12 +390,13 @@ h1 {
 }
 .parcours{
 	/* background-color:#227093; */
-	width:100%;
+	width:95%;
 	min-height:68vh;
 	display:flex;
 	justify-content:center;
 	align-items:center;
     margin-top: 50px;
+    gap: 20px;
 }
 
 .parcours h2{
@@ -429,7 +430,7 @@ margin: 10px;
 }
 .timeline ul li span{
 	display:inline-block;
-	background-color:#1685b8;
+	background-color:#54bff1;
 	border-radius:25px;
 	padding:2px 5px;
 	font-size:15px;
@@ -517,11 +518,11 @@ margin: 10px;
     border-radius: 100px;
     height: 10px;
     width: 0;
+    background: #42ef59;
   }
   
   .progress-value-html {
     animation: html 3s normal forwards;
-    background:  #69ee5f;
     -webkit-animation: html 5s normal forwards;
 }
   
@@ -532,7 +533,6 @@ margin: 10px;
 
   .progress-value-css {
     animation: css 3s normal forwards;
-    background: #69ee5f;
     -webkit-animation: css 5s normal forwards;
 }
 
@@ -542,7 +542,6 @@ margin: 10px;
   }
   .progress-value-js {
     animation: js 3s normal forwards;
-    background: #69ee5f;
     -webkit-animation: js 5s normal forwards;
 }
 
