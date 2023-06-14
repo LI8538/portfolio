@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire d'e-mail avec EmailJS</title>
+</head>
+<body>
+  <h1>Formulaire d'e-mail</h1>
+
+  <form id="emailForm">
+    <label for="recipient">Destinataire :</label>
+    <input type="email" id="recipient" name="recipient" required><br>
+
+    <label for="subject">Sujet :</label>
+    <input type="text" id="subject" name="subject" required><br>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <input type="submit" value="Envoyer">
+  </form>
+
+  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init('OB9rZPQE1JUMJOwHhGVJl'); // Remplacez YOUR_USER_ID par votre User ID EmailJS
+
+      document.getElementById('emailForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Récupérer les valeurs des champs du formulaire
+        var form = document.getElementById('emailForm');
+        var recipient = form.recipient.value;
+        var subject = form.subject.value;
+        var message = form.message.value;
+
+        // Envoyer l'e-mail
+        var templateParams = {
+          to_email: recipient,
+          subject: subject,
+          message: message
+        };
+
+        emailjs.send('service_y3r1xel', 'template_276yioe', templateParams) // Remplacez YOUR_SERVICE_ID et YOUR_TEMPLATE_ID par vos propres IDs EmailJS
+          .then(function(response) {
+            console.log('E-mail envoyé avec succès !', response);
+            alert('E-mail envoyé avec succès !');
+            form.reset();
+          }, function(error) {
+            console.log('Erreur lors de l\'envoi de l\'e-mail :', error);
+            alert('Une erreur est survenue lors de l\'envoi de l\'e-mail.');
+          });
+      });
+    })();
+  </script>
+</body>
+</html>
