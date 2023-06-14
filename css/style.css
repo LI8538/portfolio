@@ -430,14 +430,14 @@ margin: 10px;
 }
 .timeline ul li span{
 	display:inline-block;
-	background-color:#54bff1;
+	background-color:#96d5f3;
 	border-radius:25px;
 	padding:2px 5px;
 	font-size:15px;
 	text-align:center;
 }
 .timeline ul li .content h3{
-	color:#5384f0;
+	color:#55a1ca;
 	font-size:17px;
 	padding-top:5px;
 }
