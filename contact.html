@@ -2,55 +2,82 @@
 <html>
 <head>
   <title>Formulaire d'e-mail avec EmailJS</title>
+  <style>
+    .field {
+  margin-bottom: 10px;
+}
+
+.field label {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
+.field input {
+  display: block;
+  min-width: 250px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  background-color: #4460AA;
+  color: #fff;
+  border: none
+}
+  </style>
 </head>
 <body>
-  <h1>Formulaire d'e-mail</h1>
-
-  <form id="emailForm">
-    <label for="recipient">Destinataire :</label>
-    <input type="email" id="recipient" name="recipient" required><br>
-
-    <label for="subject">Sujet :</label>
-    <input type="text" id="subject" name="subject" required><br>
-
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" rows="4" required></textarea><br>
-
-    <input type="submit" value="Envoyer">
+  <form id="form">
+    <div class="field">
+      <label for="from_name">from_name</label>
+      <input type="text" name="from_name" id="from_name">
+    </div>
+    <div class="field">
+      <label for="to_name">to_name</label>
+      <input type="text" name="to_name" id="to_name">
+    </div>
+    <div class="field">
+      <label for="message">message</label>
+      <input type="text" name="message" id="message">
+    </div>
+    <div class="field">
+      <label for="reply_to">reply_to</label>
+      <input type="text" name="reply_to" id="reply_to">
+    </div>
+  
+    <input type="submit" id="button" value="Send Email" >
   </form>
+  
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('_NOXY_Q-gDzi0OrT6')
 
-  <script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init('_NOXY_Q-gDzi0OrT6'); // Remplacez YOUR_USER_ID par votre User ID EmailJS
+    const btn = document.getElementById('button');
 
-      document.getElementById('emailForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
 
-        // Récupérer les valeurs des champs du formulaire
-        var form = document.getElementById('emailForm');
-        var recipient = form.recipient.value;
-        var subject = form.subject.value;
-        var message = form.message.value;
+   btn.value = 'Sending...';
 
-        // Envoyer l'e-mail
-        var templateParams = {
-          to_email: recipient,
-          subject: subject,
-          message: message
-        };
+   const serviceID = 'service_y3r1xel';
+   const templateID = 'template_276yioe';
 
-        emailjs.send('service_y3r1xel', 'template_276yioe', templateParams) // Remplacez YOUR_SERVICE_ID et YOUR_TEMPLATE_ID par vos propres IDs EmailJS
-          .then(function(response) {
-            console.log('E-mail envoyé avec succès !', response);
-            alert('E-mail envoyé avec succès !');
-            form.reset();
-          }, function(error) {
-            console.log('Erreur lors de l\'envoi de l\'e-mail :', error);
-            alert('Une erreur est survenue lors de l\'envoi de l\'e-mail.');
-          });
-      });
-    })();
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
   </script>
 </body>
 </html>
