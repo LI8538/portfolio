@@ -245,8 +245,8 @@ main {
 /* profil */
 h1 {
     font-size: 2rem;
-    color:rgb(255, 255, 255);
-    background-color: rgb(10, 6, 72);
+    color:rgb(255, 248, 255);
+    background-color: rgb(38, 145, 238);
 }
 
 /* h2 {
@@ -262,7 +262,7 @@ h1 {
     transform: translateX(-50%);
     width: 100px;
     height: 5px;
- git    background-color: #f8b3cd;
+    background-color: #f8b3cd;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -274,9 +274,9 @@ h1 {
     display: flex;
     justify-content: center;
     /* margin-top: 30px; */
-    background-image: url(https://i.pinimg.com/originals/02/3f/f9/023ff99b54a1e7f3c74d7d5bb11c5973.jpg);
+    background-image: url(https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
     background-size: cover;
-    padding: 180px;
+    padding: 150px;
    
     
 }
@@ -289,7 +289,7 @@ h1 {
 .profil p {
     font-size: 20px;
     margin: 20px;
-    background-color: rgb(249, 223, 184);
+    background-color:#f8b3cd;
    
 }
 
@@ -360,7 +360,7 @@ h1 {
 }
 
 .service {
-    background-color: rgb(227, 246, 233);
+    background-color: rgb(229, 239, 246);
     margin: 20px;
     margin-top: 30px;
     /* margin-top:  38px;  */
@@ -511,7 +511,7 @@ margin: 10px;
     border-radius: 100px;
     height: 10px;
     width: 0;
-    background: #42ef59;
+    background:  rgb(83, 170, 246);
   }
   
   .progress-value-html {
@@ -566,16 +566,31 @@ margin: 10px;
 /* mes projets */
 .projets-section{
 margin-top: 30px;
+
 }
 
 .projets{
     margin: 50px;  
+    
 }
 
 .card{
     margin-bottom: 30px;
-    background-color: #eff7e3;
+    background-color: #f4dced;
     border: grey 1px solid;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.card img{
+  border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .card p{
@@ -588,6 +603,7 @@ form{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
 
@@ -606,14 +622,14 @@ form{
   display: block;
   min-width: 250px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 input[type="submit"] {
   display: block;
   padding: 6px 30px;
-  font-size: 14px;
-  background-color: #4460AA;
+  font-size: 18px;
+  background-color: #435da4;
   color: #fff;
   border: none
 }
