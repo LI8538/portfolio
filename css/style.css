@@ -658,6 +658,12 @@ input[type="submit"] {
 
 .cliqueCv{
   text-align: center;
+  margin-top: 30px;
+}
+
+.cliqueCv a{
+  font-size: 25px;
+  font-style: italic;
 }
 
 
