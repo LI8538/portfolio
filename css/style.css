@@ -635,6 +635,10 @@ input[type="submit"] {
   border: none
 }
 
+h4{
+margin: 10px;
+text-decoration: underline;
+}
 /* icone de contact */
 
 
@@ -716,9 +720,12 @@ footer p{
         margin-left: 50px;
     }
 
+    /* contact */
 
 
-
-
+    .contact{
+      display: flex;
+      margin: 200px;
+    }
 
 }
