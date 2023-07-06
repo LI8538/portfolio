@@ -248,6 +248,9 @@ ul {
   padding: 5px;
   width: 40px;
   height: 40px;
+  font-size: x-large;
+  background-color: #000000;
+  border: 3px white dotted;
  }
 
 /* ------------ main ---------- */
