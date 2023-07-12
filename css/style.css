@@ -341,32 +341,24 @@ h1 {
   scroll-behavior: smooth;
 }
 
-#scrollToTopButton {
-  display: block;
-  z-index: 99;
-  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
-  opacity: 0;
-  visibility: hidden;
+.scroll_haut{
   position: fixed;
-  bottom: 20px;
-  right: 30px;
-  border: none;
-  border-radius: 4px;
-  outline: none;
+  bottom: 0;
+  right: 10px;
+  z-index: 99;
   width: 50px;
   height: 50px;
-  padding: 8px;
-  background-color: #575757bd;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-#scrollToTopButton i {
-  color: white;
+
+.fa-arrow-up{
+  font-size: 20px;
 }
-#scrollToTopButton:hover,
-#scrollToTopButton:focus,
-#scrollToTopButton:focus-within {
-  cursor: pointer;
-  background-color: #0078b4;
-}
+
 
 
 /* service */
