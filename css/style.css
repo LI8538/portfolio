@@ -337,9 +337,9 @@ h1 {
 }
 /* flèche retourne en haut de page js */
 
-html, body {
+/* html, body {
   scroll-behavior: smooth;
-}
+} */
 
 .scroll_up{
   position: fixed;
