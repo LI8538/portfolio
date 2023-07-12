@@ -44,17 +44,24 @@
           <span class="bar"></span>
         </button>
       </nav>
-      <!-- bouton JourNuit -->
+      <!-- bouton JourNuit js -->
       <button id="theme-btn">🌙</button>
     </header>
     <!------------ main ---------->
     <main>
+
+      <!-- flèche retourne en haut de page js-->
+      <div class="fleche">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+
       <!-- profil -->
       <article class="contenaire-profil">
         <section class="profil">
           <img src="./img/profil03.png" alt="profil" />
           <p>WANG LI</p>
-          <h1>Développeuse Web</h1>        </section>
+          <h1>Développeuse Web</h1>
+        </section>
       </article>
 
       <!-- mes services -->
@@ -144,7 +151,7 @@
         <h2>Mes Compétences</h2>
         <!-- html -->
         <section class="compSec">
-          <img src="./img/html.png" width="80px"    alt="logo" />
+          <img src="./img/html.png" width="80px" alt="logo" />
           <div class="progress">
             <div class="progress-value progress-value-html">
               <p>HTML 90%</p>
@@ -218,39 +225,38 @@
 
       <!-- mes projets -->
 
-      
-
-
-     
       <!--projets ligne1 -->
       <article class="projets">
         <h2 id="projets">Mes Projets</h2>
 
         <section class="projets-section ligne0">
           <div class="card new-card">
-            <a href="https://react-projet-savon.netlify.app/" target="_blank"><img
-              src="./img/projet-react-savonnerie.png"
-              width="100%"
-              alt="projet-hexashop"
+            <a href="https://react-projet-savon.netlify.app/" target="_blank"
+              ><img
+                src="./img/projet-react-savonnerie.png"
+                width="100%"
+                alt="projet-hexashop"
             /></a>
-            <p>projet-react-savonnerie:<br>
+            <p>
+              projet-react-savonnerie:<br />
               REACT
             </p>
           </div>
-          </section>
+        </section>
         <section class="projets-section ligne1">
-
           <div class="card">
-            <a href="https://li8538.github.io/API_METEO/" target="_blank"><img
-              src="./img/projet_api_meteo.png"
-              width="100%"
-              alt="projet-hexashop"
+            <a href="https://li8538.github.io/API_METEO/" target="_blank"
+              ><img
+                src="./img/projet_api_meteo.png"
+                width="100%"
+                alt="projet-hexashop"
             /></a>
-            <p>METEO:<br>
+            <p>
+              METEO:<br />
               API, AJAX
             </p>
           </div>
-          
+
           <div class="card">
             <a href="https://li8538.github.io/hexashop/" target="_blank">
               <img
@@ -276,9 +282,7 @@
         <!--projets ligne2  -->
         <section class="projets-section ligne2">
           <div class="card">
-            <a
-              href="https://li8538.github.io/design/"
-              target="_blank"
+            <a href="https://li8538.github.io/design/" target="_blank"
               ><img
                 src="./img/projet-design.png"
                 width="100%"
@@ -320,96 +324,99 @@
       <!-- mes contacts -->
 
       <article id="contact">
-      
-      <h2>Mes Contacts</h2>
-      <section class="contact">
-<div class="div-contact">
-        <!-- cv -->
-        <div
-        style="
-          position: relative;
-          width: 50%;
-          height: 0;
-          margin: 0 auto;
-          padding-top: 70%;
-          padding-bottom: 0;
-          box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
-          margin-top: 1.6em;
-          margin-bottom: 0.9em;
-          overflow: hidden;
-          border-radius: 8px;
-          will-change: transform;
-        "
-      >
-        <iframe
-          loading="lazy"
-          style="
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border: none;
-            padding: 0;
-            margin: 0;
-          "
-          src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFk3nXO4EY&#x2F;view?embed"
-          allowfullscreen="allowfullscreen"
-          allow="fullscreen"
-        >
-        </iframe>
-      </div> 
-      <div class="cliqueCv">
-       <a href=" https://www.canva.com/design/DAFk3nXO4EY/view" target="_blank">Ouvrir le CV</a>
-      </div>
-    </div>
-        <!-- formulaire de contact -->
-       
-        <form id="form" class="item"> <h3>Formulaire de contact</h3>
-          <div class="field">
-            <label for="from_name">Votre nom et prénom</label>
-            <input type="text" name="from_name" id="from_name" />
+        <h2>Mes Contacts</h2>
+        <section class="contact">
+          <div class="div-contact">
+            <!-- cv -->
+            <div
+              style="
+                position: relative;
+                width: 50%;
+                height: 0;
+                margin: 0 auto;
+                padding-top: 70%;
+                padding-bottom: 0;
+                box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+                margin-top: 1.6em;
+                margin-bottom: 0.9em;
+                overflow: hidden;
+                border-radius: 8px;
+                will-change: transform;
+              "
+            >
+              <iframe
+                loading="lazy"
+                style="
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  top: 0;
+                  left: 0;
+                  border: none;
+                  padding: 0;
+                  margin: 0;
+                "
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFk3nXO4EY&#x2F;view?embed"
+                allowfullscreen="allowfullscreen"
+                allow="fullscreen"
+              >
+              </iframe>
+            </div>
+            <div class="cliqueCv">
+              <a
+                href=" https://www.canva.com/design/DAFk3nXO4EY/view"
+                target="_blank"
+                >Ouvrir le CV</a
+              >
+            </div>
           </div>
-          <!-- <div class="field">
+          <!-- formulaire de contact -->
+
+          <form id="form" class="item">
+            <h3>Formulaire de contact</h3>
+            <div class="field">
+              <label for="from_name">Votre nom et prénom</label>
+              <input type="text" name="from_name" id="from_name" />
+            </div>
+            <!-- <div class="field">
             <label for="to_name">to_name</label>
             <input type="text" name="to_name" id="to_name">
           </div> -->
-          <div class="field">
-            <label for="message">Votre message</label>
-            <input type="text" name="message" id="message" />
-          </div>
-          <div class="field">
-            <label for="reply_to">Votre E-mail</label>
-            <input type="text" name="reply_to" id="reply_to" />
-          </div>
-          <input type="submit" id="button" value="Envoie moi un E-mail 💌" />
-        </form>      
-      </section>
+            <div class="field">
+              <label for="message">Votre message</label>
+              <input type="text" name="message" id="message" />
+            </div>
+            <div class="field">
+              <label for="reply_to">Votre E-mail</label>
+              <input type="text" name="reply_to" id="reply_to" />
+            </div>
+            <input type="submit" id="button" value="Envoie moi un E-mail 💌" />
+          </form>
+        </section>
       </article>
 
       <!-- icone contact -->
-      <article class="cv"> 
-       <!-- icone de contact -->
-       <div class="iconeContact">
-        <!-- i github -->
-        <a href="https://github.com/LI8538" target="_blank"
-          ><i class="fa-brands fa-github fa-2xl" style="color: #19191a"></i
-        ></a>
-        <!-- i linkedin -->
-        <a href="https://www.linkedin.com/in/wang-li/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-2xl" style="color: #19191a"></i
-        ></a>
-        <!-- i mail -->
-        <a href="mailto:wanglijtm@gmail.com"
-          ><i class="fa-solid fa-envelope fa-2xl" style="color: #19191a"></i
-        ></a>
-        <!-- i tel -->
-        <a href="tel:0695913353"
-          ><i class="fa-solid fa-phone fa-2xl" style="color: #19191a"></i
-        ></a>
-      </div>
-       
-     </article>
+      <article class="cv">
+        <!-- icone de contact -->
+        <div class="iconeContact">
+          <!-- i github -->
+          <a href="https://github.com/LI8538" target="_blank"
+            ><i class="fa-brands fa-github fa-2xl" style="color: #19191a"></i
+          ></a>
+          <!-- i linkedin -->
+          <a href="https://www.linkedin.com/in/wang-li/" target="_blank">
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #19191a"></i
+          ></a>
+          <!-- i mail -->
+          <a href="mailto:wanglijtm@gmail.com"
+            ><i class="fa-solid fa-envelope fa-2xl" style="color: #19191a"></i
+          ></a>
+          <!-- i tel -->
+          <a href="tel:0695913353"
+            ><i class="fa-solid fa-phone fa-2xl" style="color: #19191a"></i
+          ></a>
+        </div>
+      </article>
     </main>
     <!------------ footer ---------->
     <footer>
@@ -467,7 +474,7 @@
               alert(JSON.stringify(err));
             }
           );
-        });   
+        });
     </script>
     <script src="./fonction.js"></script>
   </body>

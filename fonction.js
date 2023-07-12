@@ -35,8 +35,14 @@ if (toggle_btn.innerText ==='🌙') {
   service.add.classList('serviceChangeColor');
 }
 
-
-
-
-
 });
+
+/*----------fleche retourne en haut de page--------*/
+const fleche = document.querySelector(".fleche");
+      fleche.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
