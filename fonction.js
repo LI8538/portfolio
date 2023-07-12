@@ -42,6 +42,7 @@ if (toggle_btn.innerText ==='🌙') {
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth' // Permet un défilement fluide
+    left: 0,
+    behavior: 'smooth'
   });
 }
