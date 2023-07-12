@@ -337,9 +337,9 @@ h1 {
 }
 /* flèche retourne en haut de page js */
 
-/* html, body {
+html, body {
   scroll-behavior: smooth;
-} */
+}
 
 .scroll_up{
   position: fixed;
@@ -775,7 +775,15 @@ footer p{
 @media screen and (min-width:800px) {
 
     /* -------- header -------- */
-
+/* flèche retourne en haut de page js */
+    .scroll_up{
+      position: fixed;
+      right: 20;
+      bottom: 0;
+      padding: 20px;
+      z-index: 99;
+      display: block;
+    }
 
 
 
