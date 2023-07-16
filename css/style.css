@@ -615,10 +615,9 @@ margin-top: 10px;
 
 .projets{
     margin: 50px;  
-    
 }
 
-.projets-section .new-card::before{
+.new-card::before{
   background-color: rgb(255, 81, 0);
   content: "NEW-Projet";
   position: absolute;
@@ -638,12 +637,8 @@ margin-top: 10px;
   -o-transform: rotate(18deg);
 }
 
-.projets-section .new-card{
-  grid-column: 2;
-}
-
 .card{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     background-color: #f9c1e8c5;
     border: grey 1px solid;
     border-radius: 8px;
@@ -804,13 +799,20 @@ footer p{
     }
 
     /* mes projets */
-    .projets-section{
+    /* .projets-section{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-    }
+    } */
 
     .card{
-        margin-left: 50px;
+        margin-left: 30px;
+        width: 30%;
+    }
+    .projet-flex{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     /* contact */
